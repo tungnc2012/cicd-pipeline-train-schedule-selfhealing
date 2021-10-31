@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: testservices
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: train-schedule
   ports:
