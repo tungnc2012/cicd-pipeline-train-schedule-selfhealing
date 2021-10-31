@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: testservices
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: train-schedule
   ports:
   - protocol: TCP
-    nodePort: 30080
+    nodePort: 30081
     port: 8080
     targetPort: 8080
     
